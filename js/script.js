@@ -2,7 +2,7 @@
 (function($){
 	//1st element where we want to target, 2nd object
 	var typed = new Typed('span.txt-rotate',{
-		strings: ["I'm a Data Science Student", "I'm a Fresh Graduates"],
+		strings: ["VA-11 HALL-A"],
 		typeSpeed: 100,
 		backSpeed: 100,
 		fadeOut: false,
@@ -34,5 +34,12 @@ $(document).ready(function(){
 			enabled: true,
 			navigateByImgClick: true
 		}
+	});
+	
+	$("#hov").hover(function(){
+		$("#hov1").text("Play the music for some wholesome experience :) (Chrome doesnt let me autoplay. Bummer)")
+	},
+	function(){
+		$("#hov1").text("")
 	});
 });
