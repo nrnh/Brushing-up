@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to A Website</title>
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css">
@@ -12,42 +14,46 @@
   <body>
   	
     <section class="home" id="home"> 
-      <div class="titles">
-      	<nav class="navbar navbar-expand-lg navbar-dark">
-	  		<a class="navbar-brand" href="#">HUMAIRA RASHIDI</a>
-	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-	    	<span class="navbar-toggler-icon"></span>
-	  		</button>
+      	<div class="titles">
+      		<nav class="navbar navbar-expand-lg navbar-dark">
+	  			<a class="navbar-brand" href="#">VA-11 HALL-A</a>
+	  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+	    			<span class="navbar-toggler-icon"></span>
+	  			</button>
 
-		  	<div class="collapse navbar-collapse" id="navbarToggler">
-		    	<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-		      		<li class="nav-item">
-		        		<a class="nav-link" href="#home">Home</a>
-		      		</li>
-		      		<li class="nav-item">
-		        		<a class="nav-link" href="#info">My Info</a>
-		      		</li>
-		      		<li class="nav-item">
-		      			<a class="nav-link" href="#">Resume</a>
-		      		</li>
-		      		<li>
-		      			<a class="nav-link" href="#">Contact</a>
-		      		</li>
-		    	</ul>
-		  	</div>
-		</nav>
-        <div class="titles-wrap">
-          <h1>Hello I am <span>Humaira Rashidi</span></h1>
-          <h2><span class="txt-rotate"></span></h2>
-          <p>A Data Science student with passion for Data, Art and Design</p>
-          <div class="getintouch">
-            <div class="">
-              <!-- anchor -->
-              <a href="#contact" class="btn">Get In Touch</a>
-            </div>
-          </div>
-        </div>
-      </div>
+		  		<div class="collapse navbar-collapse" id="navbarToggler">
+		    		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		      			<li class="nav-item">
+		        			<a class="nav-link" href="#home">Home</a>
+		      			</li>
+		      			<li class="nav-item">
+		        			<a class="nav-link" href="#sec1">Section 1</a>
+		      			</li>
+		      			<li class="nav-item">
+		      				<a class="nav-link" href="sec2">Section 2</a>
+		      			</li>
+		      			<li>
+		      				<a class="nav-link" href="sec3">Section 3</a>
+		      			</li>
+		    		</ul>
+		    		<audio controls autoplay>
+  						<source src="audio/03 Welcome to VA-11 HALL-A.mp3" type="audio/mpeg">
+					</audio>
+		  		</div>
+			</nav>
+	        <div class="titles-wrap">
+	          	<h1>Hello, welcome to <span class="txt-rotate"></span></h1>
+	          	<p>This website is inspired by this one chill cyberpunk game about bartending and listening to people's problems.</br>
+	          		We called this website as Valhalla for short. I'm dumping everything here to see how it works.</p>
+	          	<div class="getintouch">
+	            	<div class="">
+	              		<!-- anchor -->
+	              		<a href="https://store.steampowered.com/app/447530/VA11_HallA_Cyberpunk_Bartender_Action/" class="btn" id="hov">Game's source?</a>
+	            	</div>
+	          	</div>
+	          	<p id="hov1"></p>\
+	        </div>
+	    </div>
     </section>
     <!--
     	HTML structure for services section, 
@@ -56,13 +62,14 @@
     	id : navigation purposes
 		container (a bootstrap class) : width of the layout
     -->
-    <section class="services" id="info">
+    <section class="section1" id="s1">
     	<div class="container">
     		<!--Row: to group column together-->
     		<div class="row">
     			<div class="col-lg-10">
     				<div class="sec-title">
-    					<h2>My Info</h2>
+    					<h2>Section 1</h2>
+    					<p>Just a column with drinks. The popular ones.</p>
     				</div>
     			</div>
     		</div>
@@ -70,123 +77,167 @@
     		<div class="row">
     			<!--1st box-->
     			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-    				<div class="service-box">
+    				<div class="sec-box">
     					<div class="icontitle">
-    						<i class="mdi mdi-animation-outline mdi-48px"></i>
+    						<img src="images/Bleeding_Jane.png" alt="drink1">
     						<div class="title">
-    							<span>01</span>
-    							<h4>Python Programming</h4>
+    							<span>$200</span>
+    							<h4>Bleeding Jane</h4>
     						</div>
     					</div>
     					<!--Still within service box tag-->
-    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    					<p>Say the name of this drink three times in front of a mirror and you'll look like a fool.</p>
     				</div>
     			</div>
     			<!--2nd box-->
     			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-    				<div class="service-box">
+    				<div class="sec-box">
     					<div class="icontitle">
-    						<i class="mdi mdi-code-braces mdi-48px"></i>
+    						<img src="images/CreviceSpike.png" alt="drink2">
     						<div class="title">
-    							<span>02</span>
-    							<h4>Development</h4>
+    							<span>$140</span>
+    							<h4>Crevice Spike</h4>
     						</div>
     					</div>
     					<!--Still within service box tag-->
-    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    					<p>It will knock the drunkenness out of you or knock you out cold.</p>
     				</div>
     			</div>
     			<!--3rd box-->
     			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-    				<div class="service-box">
+    				<div class="sec-box">
     					<div class="icontitle">
-    						<i class="mdi mdi-tab mdi-48px"></i>
+    						<img src="images/Fluffy_Dream.png" alt="drink3">
     						<div class="title">
-    							<span>03</span>
-    							<h4>Graphic</h4>
+    							<span>$170</span>
+    							<h4>Fluffy Dream</h4>
     						</div>
     					</div>
     					<!--Still within service box tag-->
-    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    					<p>A couple of these will make your tongue feel velvet-y. More of them and you'll be sleeping soundly,</p>
     				</div>
     			</div>
     			<!--4th box-->
     			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-    				<div class="service-box">
+    				<div class="sec-box">
     					<div class="icontitle">
-    						<i class="mdi mdi-laptop mdi-48px"></i>
+    						<img src="images/GutPunch.png" alt="drink4">
     						<div class="title">
-    							<span>04</span>
-    							<h4>Web Design</h4>
+    							<span>$80</span>
+    							<h4>Gut Punch</h4>
     						</div>
     					</div>
     					<!--Still within service box tag-->
-    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    					<p>It's supposed to mean "a punch made of innards", but the name actually described what you feel while drinking it.</p>
     				</div>
     			</div>
     			<!--5th box-->
     			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-    				<div class="service-box">
+    				<div class="sec-box">
     					<div class="icontitle">
-    						<i class="mdi mdi-cellphone-android mdi-48px"></i>
+    						<img src="images/Marsblast.png" alt="drink5">
     						<div class="title">
-    							<span>05</span>
-    							<h4>Mobile Apps</h4>
+    							<span>$170</span>
+    							<h4>Marsblast</h4>
     						</div>
     					</div>
     					<!--Still within service box tag-->
-    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    					<p>One of these is enough to leave you face red like the actual planet.</p>
     				</div>
     			</div>
     			<!--6th box-->
     			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-    				<div class="service-box">
+    				<div class="sec-box">
     					<div class="icontitle">
-    						<i class="mdi mdi-lightbulb-outline mdi-48px"></i>
+    						<img src="images/Piano_Woman.png" alt="drink6">
     						<div class="title">
-    							<span>06</span>
-    							<h4>Branding</h4>
+    							<span>$320</span>
+    							<h4>Piano Woman</h4>
     						</div>
     					</div>
     					<!--Still within service box tag-->
-    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    					<p>It was originally called Pretty Woman, but too many people complained there should be a Piano Woman if there was a Piano Man.</p>
     				</div>
     			</div>
     		</div>
     	</div>
     </section>
 
-    <section class="work" id="work">
+    <section class="section2" id="s2">
     	<div class="container">
     		<div class="row">
     			<div class="col-lg-10">
     				<div class="sec-title">
-    					<h2>My Work</h2>
+    					<h2>Section 2</h2>
+    					<p>All drinks available. Avoid anything "Promo".</p>
     				</div>
     			</div>
     		</div>
     		<!--Filterable menu--->
     		<div class="row">
     			<ul class="list-filter">
-    				<li><a class="lists active" data-filter="*">All</a></li>
-    				<li><a class="lists" data-filter=".design">Design</a></li>
-    				<li><a class="lists" data-filter=".development">Development</a></li>
-    				<li><a class="lists" data-filter=".graphic">Graphic</a></li>
-    				<li><a class="lists" data-filter=".mobileapps">Mobile Apps</a></li>
+    				<li><a class="lists active" data-filter="*">ALL</a></li>
+    				<li>
+    					<div class="dropdown">
+	    					<button class="btn-sec2 dropdown-toggle" type="button" id="dropdown-sec2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    						By Name
+	    						<span class="caret"></span></button>
+	    						<ul class="dropdown-menu">
+	    							<li><a class="lists" data-filter=".B">B</a></li>
+	    							<li><a class="lists" data-filter=".C">C</a></li>
+	    							<li><a class="lists" data-filter=".F">F</a></li>
+    								<li><a class="lists" data-filter=".G">G</a></li>
+    								<li><a class="lists" data-filter=".M">M</a></li>
+    								<li><a class="lists" data-filter=".P">P</a></li>
+    								<li><a class="lists" data-filter=".S">S</a></li>
+    								<li><a class="lists" data-filter=".Z">Z</a></li>
+	    						</ul>
+	    					</button>
+	    				</div>
+    				</li>
+    				<li>
+    					<div class="dropdown">
+	    					<button class="btn-sec2 dropdown-toggle" type="button" id="dropdown-sec2-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    						By Flavor
+	    						<span class="caret"></span></button>
+	    						<ul class="dropdown-menu">
+	    							<li><a class="lists" data-filter=".sweet">Sweet</a></li>
+	    							<li><a class="lists" data-filter=".bitter">Bitter</a></li>
+	    							<li><a class="lists" data-filter=".sour">Sour</a></li>
+    								<li><a class="lists" data-filter=".spicy">Spicy</a></li>
+    								<li><a class="lists" data-filter=".bubbly">Bubbly</a></li>
+	    						</ul>
+	    					</button>
+	    				</div>
+    				</li>
+    				<li>
+    					<div class="dropdown">
+	    					<button class="btn-sec2 dropdown-toggle" type="button" id="dropdown-sec2-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    						By Type
+	    						<span class="caret"></span></button>
+	    						<ul class="dropdown-menu">
+	    							<li><a class="lists" data-filter=".girly">Girly</a></li>
+	    							<li><a class="lists" data-filter=".manly">Manly</a></li>
+	    							<li><a class="lists" data-filter=".classic">Classic</a></li>
+    								<li><a class="lists" data-filter=".classy">Classy</a></li>
+    								<li><a class="lists" data-filter=".promo">Promo</a></li>
+	    						</ul>
+	    					</button>
+	    				</div>
+    				</li>
     			</ul>
     		</div>
     	</div>
 
     	<div class="container">
     		<div class="row projects-wrapper"> 
-    			<div class="col-12 col-sm-6 col-md-6 col-lg-4 design development">
-    				<div class="work-box"> <!--border div for image-->
-    					<a href="images/duck.PNG" class="popup-image">
-    						<!--bootstrap class that scale images to its container-->
-    						<img src="images/duck.PNG" alt="work image 1" class="work-img img-fluid">
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 bitter promo G">
+    				<div class="sec2-box"> 
+    					<a href="images/GrizzlyTemple.png" class="popup-image">
+    						<img src="images/GrizzlyTemple.png" alt="Grizzly Temple" class="sec2-img img-fluid">
     						<!--overlay icon and text-->
-    						<div class="work-overlay">
-    							<div class="work-caption text-white text-center">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
     								<div class="overlay-icon-holder">
     									<ul class="list-inline">
     										<li class="list-inline-item">
@@ -196,22 +247,20 @@
     										</li>
     									</ul>
     								</div>
-    								<h5>Design, Development</h5>
-    								<p>24th July 2020</p>
+    								<h5>Grizzly Temple</h5>
+    								<p>Bitter, Bland, Promo</p>
     							</div>
     						</div>
     					</a>
     				</div>    				
     			</div>
-    			<!--1st-->
-    			<div class="col-12 col-sm-6 col-md-6 col-lg-4 graphic mobileapps">
-    				<div class="work-box"> <!--border div for image-->
-    					<a href="images/duck.PNG" class="popup-image">
-    						<!--bootstrap class that scale images to its container-->
-    						<img src="images/duck.PNG" alt="work image 2" class="work-img img-fluid">
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 bitter burning P">
+    				<div class="sec2-box"> 
+    					<a href="images/Pile_driver.png" class="popup-image">
+    						<img src="images/Pile_driver.png" alt="Pile Driver" class="sec2-img img-fluid">
     						<!--overlay icon and text-->
-    						<div class="work-overlay">
-    							<div class="work-caption text-white text-center">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
     								<div class="overlay-icon-holder">
     									<ul class="list-inline">
     										<li class="list-inline-item">
@@ -221,22 +270,21 @@
     										</li>
     									</ul>
     								</div>
-    								<h5>Graphic Mobileapps</h5>
-    								<p>24th July 2020</p>
+    								<h5>Pile Driver</h5>
+    								<p>Bitter, Burning, Manly</p>
     							</div>
     						</div>
     					</a>
     				</div>    				
     			</div>
-    			<!--2nd-->
-    			<div class="col-12 col-sm-6 col-md-6 col-lg-4 design mobileapps">
-    				<div class="work-box"> <!--border div for image-->
-    					<a href="images/duck.PNG" class="popup-image">
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 bitter girly S">
+    				<div class="sec2-box"> <!--border div for image-->
+    					<a href="images/SunshineCloud.png" class="popup-image">
     						<!--bootstrap class that scale images to its container-->
-    						<img src="images/duck.PNG" alt="work image 3" class="work-img img-fluid">
+    						<img src="images/SunshineCloud.png" alt="Sunshine Cloud" class="sec2-img img-fluid">
     						<!--overlay icon and text-->
-    						<div class="work-overlay">
-    							<div class="work-caption text-white text-center">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
     								<div class="overlay-icon-holder">
     									<ul class="list-inline">
     										<li class="list-inline-item">
@@ -246,22 +294,20 @@
     										</li>
     									</ul>
     								</div>
-    								<h5>Design, mMbileapps</h5>
-    								<p>24th July 2020</p>
+    								<h5>Sunshine Cloud</h5>
+    								<p>Bitter, Girly, Soft</p>
     							</div>
     						</div>
     					</a>
     				</div>    				
     			</div>
-    			<!--3rd-->
-    			<div class="col-12 col-sm-6 col-md-6 col-lg-4 development graphic">
-    				<div class="work-box"> <!--border div for image-->
-    					<a href="images/duck.PNG" class="popup-image">
-    						<!--bootstrap class that scale images to its container-->
-    						<img src="images/duck.PNG" alt="work image 4" class="work-img img-fluid">
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 bubbly classic B">
+    				<div class="sec2-box"> 
+    					<a href="images/Beer.png" class="popup-image">
+    						<img src="images/Beer.png" alt="Beer" class="sec2-img img-fluid">
     						<!--overlay icon and text-->
-    						<div class="work-overlay">
-    							<div class="work-caption text-white text-center">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
     								<div class="overlay-icon-holder">
     									<ul class="list-inline">
     										<li class="list-inline-item">
@@ -271,22 +317,20 @@
     										</li>
     									</ul>
     								</div>
-    								<h5>Development, Graphic</h5>
-    								<p>24th July 2020</p>
+    								<h5>Beer</h5>
+    								<p>Bubbly, Classic, Vintage</p>
     							</div>
     						</div>
     					</a>
     				</div>    				
     			</div>
-    			<!--4th-->
-    			<div class="col-12 col-sm-6 col-md-6 col-lg-4 design graphic">
-    				<div class="work-box"> <!--border div for image-->
-    					<a href="images/duck.PNG" class="popup-image">
-    						<!--bootstrap class that scale images to its container-->
-    						<img src="images/duck.PNG" alt="work image 5" class="work-img img-fluid">
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 bubbly classy C">
+    				<div class="sec2-box"> 
+    					<a href="images/Cobalt_Velvet.png" class="popup-image">
+    						<img src="images/Cobalt_Velvet.png" alt="Cobalt Velvet" class="sec2-img img-fluid">
     						<!--overlay icon and text-->
-    						<div class="work-overlay">
-    							<div class="work-caption text-white text-center">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
     								<div class="overlay-icon-holder">
     									<ul class="list-inline">
     										<li class="list-inline-item">
@@ -296,22 +340,21 @@
     										</li>
     									</ul>
     								</div>
-    								<h5>Design, Graphic</h5>
-    								<p>24th July 2020</p>
+    								<h5>Cobalt Velvet</h5>
+    								<p>Bubbly, Classy, Burning</p>
     							</div>
     						</div>
     					</a>
     				</div>    				
     			</div>
-    			<!--5th-->
-    			<div class="col-12 col-sm-6 col-md-6 col-lg-4 mobileapps development">
-    				<div class="work-box"> <!--border div for image-->
-    					<a href="images/duck.PNG" class="popup-image">
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 sour classy B">
+    				<div class="sec2-box"> <!--border div for image-->
+    					<a href="images/Bad_Touch.png" class="popup-image">
     						<!--bootstrap class that scale images to its container-->
-    						<img src="images/duck.PNG" alt="work image 6" class="work-img img-fluid">
+    						<img src="images/Bad_Touch.png" alt="Bad Touch" class="sec2-img img-fluid">
     						<!--overlay icon and text-->
-    						<div class="work-overlay">
-    							<div class="work-caption text-white text-center">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
     								<div class="overlay-icon-holder">
     									<ul class="list-inline">
     										<li class="list-inline-item">
@@ -321,8 +364,236 @@
     										</li>
     									</ul>
     								</div>
-    								<h5>Mobileapps, Development</h5>
-    								<p>24th July 2020</p>
+    								<h5>Bad Touch</h5>
+    								<p>Sour, Classy, Vintage</p>
+    							</div>
+    						</div>
+    					</a>
+    				</div>    				
+    			</div>
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 sour classy F">
+    				<div class="sec2-box"> <!--border div for image-->
+    					<a href="images/FlamingMoai.png" class="popup-image">
+    						<!--bootstrap class that scale images to its container-->
+    						<img src="images/FlamingMoai.png" alt="Flaming Moai" class="sec2-img img-fluid">
+    						<!--overlay icon and text-->
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
+    								<div class="overlay-icon-holder">
+    									<ul class="list-inline">
+    										<li class="list-inline-item">
+    											<div class="overlay-icon">
+    												<i class="mdi mdi-link"></i>
+    											</div>
+    										</li>
+    									</ul>
+    								</div>
+    								<h5>Flaming Moai</h5>
+    								<p>Sour, Classy</p>
+    							</div>
+    						</div>
+    					</a>
+    				</div>    				
+    			</div>
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 sour promo P">
+    				<div class="sec2-box">
+    					<a href="images/Piano_Man.png" class="popup-image">
+    						<img src="images/Piano_Man.png" alt="Piano Man" class="sec2-img img-fluid">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
+    								<div class="overlay-icon-holder">
+    									<ul class="list-inline">
+    										<li class="list-inline-item">
+    											<div class="overlay-icon">
+    												<i class="mdi mdi-link"></i>
+    											</div>
+    										</li>
+    									</ul>
+    								</div>
+    								<h5>Piano Man</h5>
+    								<p>Sour, Promo, Strong</p>
+    							</div>
+    						</div>
+    					</a>
+    				</div>    				
+    			</div>
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 sour classy M">
+    				<div class="sec2-box"> <!--border div for image-->
+    					<a href="images/Mercuryblast.png" class="popup-image">
+    						<!--bootstrap class that scale images to its container-->
+    						<img src="images/Mercuryblast.png" alt="MercuryBlast" class="sec2-img img-fluid">
+    						<!--overlay icon and text-->
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
+    								<div class="overlay-icon-holder">
+    									<ul class="list-inline">
+    										<li class="list-inline-item">
+    											<div class="overlay-icon">
+    												<i class="mdi mdi-link"></i>
+    											</div>
+    										</li>
+    									</ul>
+    								</div>
+    								<h5>MercuryBlast</h5>
+    								<p>Sour, Burning, Classy</p>
+    							</div>
+    						</div>
+    					</a>
+    				</div>    				
+    			</div>
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 spicy promo B">
+    				<div class="sec2-box"> <!--border div for image-->
+    					<a href="images/BloomLight.png" class="popup-image">
+    						<!--bootstrap class that scale images to its container-->
+    						<img src="images/BloomLight.png" alt="Bloom Light" class="sec2-img img-fluid">
+    						<!--overlay icon and text-->
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
+    								<div class="overlay-icon-holder">
+    									<ul class="list-inline">
+    										<li class="list-inline-item">
+    											<div class="overlay-icon">
+    												<i class="mdi mdi-link"></i>
+    											</div>
+    										</li>
+    									</ul>
+    								</div>
+    								<h5>Bloom Light</h5>
+    								<p>Spicy, Promo, Bland</p>
+    							</div>
+    						</div>
+    					</a>
+    				</div>    				
+    			</div>
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 spicy manly M">
+    				<div class="sec2-box"> 
+    					<a href="images/Marsblast (1).png" class="popup-image">
+    						<img src="images/Marsblast (1).png" alt="Marsblast" class="sec2-img img-fluid">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
+    								<div class="overlay-icon-holder">
+    									<ul class="list-inline">
+    										<li class="list-inline-item">
+    											<div class="overlay-icon">
+    												<i class="mdi mdi-link"></i>
+    											</div>
+    										</li>
+    									</ul>
+    								</div>
+    								<h5>Marsblast</h5>
+    								<p>Spicy, Manly, Strong</p>
+    							</div>
+    						</div>
+    					</a>
+    				</div>    				
+    			</div>
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 sweet girly B">
+    				<div class="sec2-box"> 
+    					<a href="images/BlueFairy.png" class="popup-image">
+    						<img src="images/BlueFairy.png" alt="Blue Fairy" class="sec2-img img-fluid">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
+    								<div class="overlay-icon-holder">
+    									<ul class="list-inline">
+    										<li class="list-inline-item">
+    											<div class="overlay-icon">
+    												<i class="mdi mdi-link"></i>
+    											</div>
+    										</li>
+    									</ul>
+    								</div>
+    								<h5>Blue Fairy</h5>
+    								<p>Sweet, Girly, Soft</p>
+    							</div>
+    						</div>
+    					</a>
+    				</div>    				
+    			</div>
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 sweet girly M">
+    				<div class="sec2-box"> <!--border div for image-->
+    					<a href="images/Moonblast.png" class="popup-image">
+    						<!--bootstrap class that scale images to its container-->
+    						<img src="images/Moonblast.png" alt="Moonblast" class="sec2-img img-fluid">
+    						<!--overlay icon and text-->
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
+    								<div class="overlay-icon-holder">
+    									<ul class="list-inline">
+    										<li class="list-inline-item">
+    											<div class="overlay-icon">
+    												<i class="mdi mdi-link"></i>
+    											</div>
+    										</li>
+    									</ul>
+    								</div>
+    								<h5>Moonblast</h5>
+    								<p>Sweet, Girly, Happy</p>
+    							</div>
+    						</div>
+    					</a>
+    				</div>    				
+    			</div>
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 sweet girly S">
+    				<div class="sec2-box"> 
+    					<a href="images/SparkleStar.png" class="popup-image">
+    						<img src="images/SparkleStar.png" alt="Sparkle Star" class="sec2-img img-fluid">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
+    								<div class="overlay-icon-holder">
+    									<ul class="list-inline">
+    										<li class="list-inline-item">
+    											<div class="overlay-icon">
+    												<i class="mdi mdi-link"></i>
+    											</div>
+    										</li>
+    									</ul>
+    								</div>
+    								<h5>Sparkle Star</h5>
+    								<p>Sweet, Girly, Happy</p>
+    							</div>
+    						</div>
+    					</a>
+    				</div>    				
+    			</div>
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 sweet girly S">
+    				<div class="sec2-box"> 
+    					<a href="images/SugarRush.png" class="popup-image">
+    						<img src="images/SugarRush.png" alt="Sugar Rush" class="sec2-img img-fluid">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
+    								<div class="overlay-icon-holder">
+    									<ul class="list-inline">
+    										<li class="list-inline-item">
+    											<div class="overlay-icon">
+    												<i class="mdi mdi-link"></i>
+    											</div>
+    										</li>
+    									</ul>
+    								</div>
+    								<h5>Sugar Rush</h5>
+    								<p>Sweet, Girly, Happy</p>
+    							</div>
+    						</div>
+    					</a>
+    				</div>    				
+    			</div>
+    			<div class="col-12 col-sm-6 col-md-6 col-lg-3 sweet promo P">
+    				<div class="sec2-box">
+    					<a href="images/Piano_Woman (1).png" class="popup-image">
+    						<img src="images/Piano_Woman (1).png" alt="Piano Woman" class="sec2-img img-fluid">
+    						<div class="sec2-overlay">
+    							<div class="sec2-caption text-white text-center">
+    								<div class="overlay-icon-holder">
+    									<ul class="list-inline">
+    										<li class="list-inline-item">
+    											<div class="overlay-icon">
+    												<i class="mdi mdi-link"></i>
+    											</div>
+    										</li>
+    									</ul>
+    								</div>
+    								<h5>Piano Woman</h5>
+    								<p>Sweet, Happy, Promo</p>
     							</div>
     						</div>
     					</a>
@@ -331,7 +602,45 @@
     			<!--end-->
     		</div>
     	</div>
+    </section>
+    
+    <section class="section3" id="s3">
+    	<div class="img1"></div>
+	    <div class="img2"></div>
+	    <div class="img4"></div>
+	    <div class="img3"></div>
+	    <div class="strapline">
+	    	<blockquote>"Sometimes the best help one can provide is to stay alive"</blockquote>
+	    </div>
+    </section>
 
+    <section class="contact" id="contact">
+    	<div class="text-wrap" id="form">
+    		<h1>Contact</h1>
+    		<form class="vue-form" @submit.prevent="submit">
+    			<div class="error-message">
+    				<p v-show="!email.valid">Please enter a valid email</p>
+    			</div>
+    			<fieldset>
+    				<div>
+    					<label class="label" for="name">Name</label>
+    					<input type="text" name="name" id="name" required="" v-model="name">
+    				</div>
+    				<div>
+    					<label class="label" for="email">Email</label>
+    					<input type="email" name="email" id="email" required="" :class="{email,error:!email.valid}" v-model="email.value">
+    				</div>
+    				<div>
+    					<label class="label" for="textarea">Message</label>
+    					<textarea class="message" name="textarea" id="textarea" required="" v-model="message.text" :maxlength="message.maxlength"></textarea>
+    					<span class="counter">{{ message.text.length }} / {{ message.maxlength }}</span>
+    				</div>
+    				<div>
+    					<input type="submit" value="Send Form">
+    				</div>
+    			</fieldset>
+    		</form>
+    	</div>
     </section>
 
     <script src="js/jquery-3.5.1.min.js" charset="utf-8"></script>
