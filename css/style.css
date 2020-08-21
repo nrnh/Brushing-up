@@ -102,14 +102,20 @@ audio {
 	}
 	.home h2, /*Buat sama*/
 	.home p {
-		font-size: 20px;
+		font-size: 18px;
+	}
+	.home h1 {
+		font-size: 40px;
 	}
 }
 
 @media only screen and (max-width: 576px) {
+	.home .titles-wrap {
+		margin-top: 165px;
+	}
 	.home h2,
 	.home p {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.home h1 {
 		font-size: 30px;
@@ -118,11 +124,11 @@ audio {
 
 @media only screen and (max-width: 360px) {
 	.home .titles-wrap {
-		margin-top: 100px 
+		margin-top: 110px 
 	}
 	.home h2,
 	.home p {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.home h1 {
 		font-size: 28px;
@@ -171,7 +177,7 @@ audio {
 	width: 50px;
 	height: 70%;
 	z-index: -1;
-	background-color: #1b5ea3;
+	background-color: #123e6c;
 }
 
 .sec-title p {
@@ -234,6 +240,24 @@ audio {
 	font-size: 14px;
 }
 
+/*Setting style for different breakpoint*/
+@media only screen and (max-width: 576px) {
+	.section1 .sec-box {
+		margin: 30px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.section1 .sec-box {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.sec-title p {
+		font-size: 14px;
+		color: white;
+	}
+}
+
 .section2 {
 	background-image: url('../images/bg1.png');
 	background-attachment: fixed;
@@ -273,7 +297,7 @@ audio {
 }
 
 .section2 .list-filter a.active:hover {
-	color: #db185c;
+	color: #123e6c;
 }
 
 .section2 .list-filter a:hover {
@@ -313,7 +337,7 @@ audio {
 }
 
 .btn-sec2:hover {
-	color: #db185c;
+	color: #123e6c;
 } 
 
 .sec2-box {
@@ -351,7 +375,7 @@ audio {
 	bottom: 0;
 	left: 0;
 	opacity: 0;
-	background-color: #db185c; 
+	background-color: #123e6c; 
 	transition: all 0.2s linear;
 	transform: scale(0);
 }
@@ -392,6 +416,7 @@ audio {
 	color: #6666FF;
 	border: 2px solid white;
 }
+
 
 @media only screen and (max-width: 768px) {
 	.list-filter a {
@@ -461,6 +486,25 @@ blockquote {
 	margin: 35px 200px 0 40px;
 }
 
+@media only screen and (max-width: 1028px) {
+	.section3 blockquote {
+		font-size: 18px
+	}
+}
+
+@media only screen and (max-width: 904px) {
+	.section3 blockquote {
+		margin: 35px 100px 0 40px;
+	}
+}
+
+@media only screen and (max-width: 671px){
+	.section3 blockquote  {
+		margin: 35px 50px 0 40px;
+	}
+}
+
+
 .contact {
 	background-color: black;
 	min-height: 650px;
@@ -510,7 +554,7 @@ blockquote {
 .vue-form input[type="email"]:focus,
 .vue-form textarea:focus {
   	outline: none;
-  	border-color: #db185c;
+  	border-color: #123e6c;
   	box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
 }
 
@@ -522,7 +566,7 @@ blockquote {
 
 .vue-form input[type="submit"] {
   	border: none;
-  	background: #580459;
+  	background: #123e6c;
   	border-radius: 0.25em;
   	padding: 7px 20px;
   	font-family: monospace;
@@ -534,11 +578,11 @@ blockquote {
 }
 
 .vue-form input[type="submit"]:hover {
-    background: #8d228e;
+    background: #2d5a88;
 }
 .vue-form input[type="submit"]:focus {
     outline: none;
-    background: #580459;
+    background: #123e6c;
 }
 .vue-form input[type="submit"]:active {
     transform: scale(0.9);
@@ -566,4 +610,16 @@ blockquote {
     font-size: 10px;
     padding: 4px;
     color:white;
+}
+
+@media only screen and (max-width: 554px){
+	.section3 blockquote {
+		font-size: 14px;
+	}
+	.vue-form {
+		margin-left: auto;
+		margin-right: auto;
+		width: 65%;
+		display: block;
+	}
 }
