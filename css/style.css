@@ -259,6 +259,9 @@ audio {
 		font-size: 14px;
 		color: white;
 	}
+	.section2 .sec2-img{
+		padding-left:105px;
+	}
 }
 
 .section2 {
