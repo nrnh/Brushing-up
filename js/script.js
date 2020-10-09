@@ -37,7 +37,7 @@ $(document).ready(function(){
 	});
 	
 	$("#hov").hover(function(){
-		$("#hov1").text("Play the music for some wholesome experience and please support the game developer :)")
+		$("#hov1").text("Play the music for some wholesome experience and please support the game developer!")
 	},
 	function(){
 		$("#hov1").text("")
